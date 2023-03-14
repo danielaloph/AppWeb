@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Cita</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="ContenedorPrincipal">
+        <div class="Menu">
+            <a href="Inicio.html">Inicio</a>
+            <a href="AltaCita.html">Registrar Cita</a>
+            <a href="CambiarFecha.html">Modificar Fecha</a>
+            <a href="CancelarCita.html">Cancelar Cita</a>
+            <a href="MostrarCitas.html">Reporte de Citas</a>
+        </div>
+    </div>
+
+    <div>
+        <h1>Registrar Cita</h1>
+        <form id="Formulario" name="Citas" method="post" action="php/registrar.php">
+            
+            Fecha: <input type="date" class="datoEntrada" name="fecha"> 
+            <br>
+
+            ID de Paciente: <input type="text" class="datoEntrada" name="id_paciente">
+            <br>
+
+            ID de Medico: <input type="text" class="datoEntrada" name="cve_medico">
+            <br>
+
+            Motivo: <input type="text" class="datoEntrada" name="motivo">
+            <br>
+
+            Diagnostico: <input type="text" class="datoEntrada" name="diagnostico">
+            <br>
+
+            Tratamiento: <input type="text" class="datoEntrada" name="tratamiento"><br>
+            
+            <div>
+                <input type="submit" id="procesar" value="Agendar Cita">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
